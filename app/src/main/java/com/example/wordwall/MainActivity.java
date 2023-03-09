@@ -2,6 +2,7 @@ package com.example.wordwall;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < random.length(); i++) {
             characters.add(random.charAt(i) + "");
         }
-
+        Log.d("", "");
         myNikodAdapter = new MyNikodAdapter(characters, new MyNikodAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Character item) {
